@@ -1,14 +1,23 @@
-let pariDispari = prompt("Scegli pari o dispari:").toLowerCase();
+let pariDispari;
+
+do{
+    pariDispari = prompt("Scegli pari o dispari:").toLowerCase();
+     if(pariDispari != "pari" && pariDispari != "dispari"){
+         alert("Il valore inserito non è valido, riprova:");
+     }
+    console.log(pariDispari);
+} while (pariDispari != "pari" && pariDispari != "dispari");
+
 
 let numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 5:"));
 console.log(numeroUtente);
 
-function numeroPc()
+function numeroPc() 
 {
     num = Math.round(Math.random() * 4 )+ 1;
     console.log(num);
     return num;
-}
+};
 
 numeroPc();
 
@@ -34,6 +43,6 @@ function somma()
             alert("Hai perso:(");
         }
     };
-}
+};
 
 somma(numeroUtente + num);

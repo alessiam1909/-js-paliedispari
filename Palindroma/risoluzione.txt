@@ -1,0 +1,8 @@
+PROBLEMA: Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma
+
+RISOLUZIONE: 
+1 - Chiedo all'utente di inserire una parola
+2 - Creiamo una funzione dove applichiamo il metodo split, reverse e join alla parola inserita dall'utente
+3 - Creiamo una condizione
+3.1 - Se la parola è uguale alla parola invertita, allora è palindroma
+3.2 - Altrimenti la parola non è palindroma
